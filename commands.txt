@@ -1,0 +1,12 @@
+composer update
+composer install
+composer dump-autoload -o
+composer self-update --1
+php artisan serve
+composer dump-autoload -o
+php artisan config:clear
+php artisan config:cache
+cd epharmacystore/
+mv pharmastore epharmacystore
+nano .env
+cd pharmastore/
